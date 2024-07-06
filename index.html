@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperGames</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <section id="intro">
+        <div>
+            <h1>
+                ARE YOU READY?
+            </h1>
+            <div class="intro_buttons">
+                <button id="playBtn">LET'S PLAY</button>
+                <button id="cancelBtn">CANCEL</button>
+            </div>
+        </div>
+    </section>
+<!--* GAME  -->
+   
+    <section id="game_page">
+        <div class="score_table">
+            <div class="user_table">
+                <span id="userScore">0</span>
+                <p>YOU</p>
+            </div>
+
+            <!-- <div class="result_table">
+                <span id="winScore">WIN: 0</span>
+                <span id="loseScore">LOSE: 0</span>
+            </div> -->
+<!--* Ai -->
+            <div class="ai_table">
+                <span id="aiScore">0</span>
+                <p>AI</p>
+            </div>
+        </div>
+       <div class="hands_container">
+           <div>
+               <img id="userHand" src="./assets/img/r.png" alt="rock">
+            </div>
+            <div>
+                <img id="computerHand" src="./assets/img/r.png" alt="rock">
+            </div>
+        </div> 
+<!--* Buttons -->
+        <div class="button_container">
+            <button onclick="userButton('r')">R</button>
+            <button onclick="userButton('p')">P</button>
+            <button onclick="userButton('s')">S</button>
+        </div>
+    </section>
+
+    <script src="./variable.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

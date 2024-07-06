@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo Black", sans-serif;
+    font-weight: 800;
+    
+}
+
+
+#intro{
+    background: linear-gradient(to right, #f00000, #dc281e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border: solid 1px;
+}
+
+
+#intro h1{
+    font-size: 60px;
+}
+.intro_buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.intro_buttons button{
+    background-color: #fff;
+    border: none;
+    padding: 10px 36px;
+    border-radius:  10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.intro_buttons button:active{
+    background-color: #000;
+    color: white;
+    
+}
+/**game */
+#game_page{
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.score_table{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.result_table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    gap: 20px;
+}
+
+.user_table span{
+    font-size:70px;
+    color: #fff;
+
+}
+
+.user_table,.ai_table p{
+    font-size: 30px;
+}
+
+.ai_table span{
+    font-size: 70px;
+    color: #fff;
+}
+
+
+.hands_container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.hands_container div{
+    width: 30%;
+
+}
+
+.hands_container div img{
+    width: 100%;
+}
+
+
+#computerHand {
+    transform: scaleX(-1);
+}
+
+.button_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.button_container button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid black;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.button_container button:active{
+    background-color: black;
+    color: #fff;
+
+}
